@@ -30,7 +30,7 @@
 <body ng-app="RecipeApp" id="body">
   <div ng-controller="TableCtrl" ng-init="checkStorageInit()">
     <div id="header">
-      <h1>Your Favorite Recipe List</h1>
+      <h1>Let's Go Grocery Shopping! </h1>
       <p class="text-muted" id="instructions">Make your grocery list on the right by adding recipes</p>
       <div class="input-group" id="input-group-filter">
           <input type="search" ng-model="ingSearch" class="form-control" placeholder="Filter Recipe By Ingredient..." />
@@ -38,7 +38,7 @@
     </div>
     <div id="sidebar" ng-controller="GroceryListCtrl">
       <h3 id='groceryList'>Your Grocery List</h3>
-      <h6 class="text-muted" ng-if="checkedIngredients.length === 0">Please click on Recipes to populate your grocery list :)</h6>
+      <h6 class="text-muted" ng-if="checkedIngredients.length === 0">Please click on a recipe (or a couple) to populate your grocery list :)</h6>
       <ul>
         <li class="listItem" ng-repeat="ingredient in checkedIngredients">{{ingredient}}</li>
       </ul>
