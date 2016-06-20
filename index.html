@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Recipe Search</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Datascience project">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=La+Belle+Aurore' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="css/ui-grid-sky.min.css">
+
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.6/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ngStorage/0.3.6/ngStorage.min.js"></script>
+  <script src="http://ui-grid.info/release/ui-grid.js"></script>
+  <script src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
+
+  <!-- Angular Scripts -->
+  <script src="js/app.js"></script>
+  <script src="js/recipeTable/recipeTable.controller.js"></script>
+  <script src="js/recipeTable/recipeTable.service.js"></script>
+  <script src="js/recipeTable/groceryList.controller.js"></script>
+  <script src="js/recipeTable/groceryList.service.js"></script>
+</head>
+
+<body ng-app="RecipeApp" id="body">
+  <div ng-controller="TableCtrl" ng-init="checkStorageInit()">
+    <div id="header">
+      <h1>Your Favorite Recipe List</h1>
+      <p class="text-muted" id="instructions">Make your grocery list on the right by adding recipes</p>
+      <div class="input-group" id="input-group-filter">
+          <input type="search" ng-model="ingSearch" class="form-control" placeholder="Filter Recipe By Ingredient..." />
+      </div>
+    </div>
+    <div id="sidebar" ng-controller="GroceryListCtrl">
+      <h3 id='groceryList'>Your Grocery List</h3>
+      <h6 class="text-muted" ng-if="checkedIngredients.length === 0">Please click on Recipes to populate your grocery list :)</h6>
+      <ul>
+        <li class="listItem" ng-repeat="ingredient in checkedIngredients">{{ingredient}}</li>
+      </ul>
+    </div>
+    <div id="grid1" ui-grid="recipeGridOptions" ng-style="{height: (recipeGridOptions.data.length*recipeGridOptions.rowHeight)+32+'px'}" class="grid"></div>
+  </div>
+</body>
+
+</html>

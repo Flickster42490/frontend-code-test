@@ -1,0 +1,24 @@
+{
+  "name": "datascience_frontend_test",
+  "description": "datascience front end test",
+  "main": "server.js",
+  "authors": [
+    "Max Li <maximilianm.li@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/flickster42490/frontend-code-test",
+  "moduleType": [
+    "node"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-ui-grid": "~3.1.1"
+  }
+}

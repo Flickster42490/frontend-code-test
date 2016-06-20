@@ -1,0 +1,79 @@
+#body {
+  margin-left: 10px;
+  font-family: "Avenir";
+}
+
+#header {
+  width: 65%;
+}
+
+.grid {
+  display: block;
+  width: 39.5%;
+  height: 550px;
+  border: 1px;
+}
+
+#grid1 {
+  margin-top: 20px;
+  width: 65%;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+}
+
+#input-group-filter {
+  width: 25%;
+  position: absolute;
+  margin-left: 39.5%;
+  margin-top: -3%;
+  float: right;
+}
+
+.input-group .form-control {
+  position: relative;
+  z-index: 2;
+  margin-bottom: 0;
+}
+
+#checkbox {
+  margin: 35%;
+  position: relative;
+}
+
+#defaultText {
+  position: absolute;
+  padding: 14px;
+  word-wrap: normal;
+}
+
+#ingredientText {
+  position: absolute;
+  padding: 8px;
+}
+
+#instructions {
+  margin: 0 0 0 10px;
+}
+
+#sidebar {
+  position: absolute;
+  top: 10%;
+  left: 66%;
+  text-align: center;
+  width: 33%;
+  float: right;
+}
+
+ul {
+  position: relative;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.listItem {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 24px;
+}
