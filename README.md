@@ -11,7 +11,7 @@ DataScience's Frontend Code Test
 
 ## Check it out here
 
-*You can access the project through the instructions below or head on over to [letsgoshopping.herokuapp.com](http://letsgoshopping.herokuapp.com). (FYI, it might be a bit slow since it's hosted on a free dyno on Heroku)
+* You can access the project through the instructions below or head on over to [letsgoshopping.herokuapp.com](http://letsgoshopping.herokuapp.com). (FYI, it might be a bit slow since it's hosted on a free dyno on Heroku)
 
 ## Instructions to run locally
 
@@ -22,3 +22,12 @@ DataScience's Frontend Code Test
 3. Run `node server.js`
 4. In your browser, navigate to [localhost:8080](http://localhost:8080).
 
+##Requirements
+
+Using the provided JSON data representing a collection of meal recipes, create a micro frontend application that meets the following criteria:
+* Display a list (or table) of recipes.
+* Allow filtering of recipes by a single ingredient.
+* Add checkboxes to allow selection of multiple recipes.
+* Show an alphabetically ordered list of distinct ingredients for the selected recipes. This should update as recipes are selected / unselected.
+* Persist the selections locally and regenerate the view on page refresh.
+* In a README note any required setup to be able to run the app, such as modifying hosts file, etc.
