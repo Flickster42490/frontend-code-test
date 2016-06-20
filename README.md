@@ -8,7 +8,10 @@ DataScience's Frontend Code Test
 * It persists data locally using ngStorage module
 * I chose to use Angular as the frontend framework over React because of it's simplicity in creating/updating tables/lists with its two-way binding. 
 * Even though it's a simple microapp, I usually try to adhere to the Single-responsiblity principle, so I've decoupled the controllers, services, and views. 
-* You can access the project through the instructions below or head on over to [letsgoshopping.herokuapp.com](http://letsgoshopping.herokuapp.com). (FYI, it might be a bit slow since it's hosted on a free dyno on Heroku)
+
+## Check it out here
+
+*You can access the project through the instructions below or head on over to [letsgoshopping.herokuapp.com](http://letsgoshopping.herokuapp.com). (FYI, it might be a bit slow since it's hosted on a free dyno on Heroku)
 
 ## Instructions to run locally
 
